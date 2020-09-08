@@ -1,0 +1,335 @@
+/*
+Theme Name: Amsterdamse Studenten Alpen Club DEV
+Author: ASAC SiteCo
+Description: Het ASAC wordpress thema!
+Version: 1.5
+*/
+
+
+/*
+* === general css ===
+*/
+
+html, body
+{
+    margin: 0 !important;
+    padding: 0 !important;
+	height:100%;
+	overflow-x: hidden;
+	position:relative;
+    width: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	line-height: 1.5em; /* 18px */
+	color: #333;
+	background-image: url(images/dots-3x3.png);
+	background-repeat: repeat;
+	
+}
+.alignleft{
+	float:left;
+}
+.alignright{
+	float:right;
+}
+
+img{
+	max-width: 100%;
+	margin:10px;
+}
+
+#prevnext{
+	overflow:auto;
+	clear:both;
+}
+.sponsered{
+	display:inline-block;
+	width:33%;
+	text-align:center;
+}
+.sponsered img{
+	display:block;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+#wrap
+{
+	width:100%;
+	min-height:100%;
+	border-top: 4px solid #93ac12;
+	box-sizing: border-box;
+}
+
+a
+{
+	color:#93ac12;
+    text-decoration: none;
+}
+
+#contentcontainer
+{
+	background-color:#F5F5F5;
+	border:1px solid #dbdbdb;
+	border-left: 3px solid #93ac12;
+	min-height: 200px;
+	margin:30px auto;
+	padding-left:20px;
+	padding-right:20px;
+}
+
+@media only screen and (min-width: 940px) {
+
+	.container
+	{
+		width:940px;
+		margin-left:auto;
+		margin-right:auto;
+	}
+	.widget
+	{
+	width:940px;
+	}
+}
+
+@media only screen and (max-width: 940px) {
+	.container
+	{
+		margin-left:25px;
+		margin-right:25px;
+
+	}
+
+}
+
+/*
+* === header ===
+*/
+
+
+@media only screen and (max-width: 940px) {
+
+	header
+	{
+		width:100%;
+	}
+	#home-link
+	{
+		position:absolute;
+		top:12px;
+		left:0px;
+		width:100%;
+		
+	}
+	#hamburger-icon
+	{
+		position:absolute;
+		top:12px;
+		right:20px;	
+	}
+	.menu-headermenu-container
+	{
+		margin-top:-20px;	
+	}
+	.menu
+	{
+		display:none;
+	}
+	.sub-menu
+	{
+		display:none;
+		margin-left:-35px;
+	}
+	#slider
+	{
+		margin-top:20px;
+	}
+}
+@media only screen and (min-width: 940px) {
+	header
+	{
+		width:940px;
+		margin:-12px auto 0 auto;
+	}
+	header img, .menu > li
+	{
+		float:left;	
+	}
+	.mobile-menu, #home-link, #hamburger-icon
+	{
+		display:none;
+	}
+	.menu
+	{
+		display:block;
+	}
+	.menu > li:hover .sub-menu
+	{
+		display:block;
+		padding-top:5px;
+		margin-left:-20px;
+	}
+	.sub-menu
+	{
+		display:none;	
+		z-index:10;
+		position:absolute;
+	}
+}
+
+header img
+{
+	margin:10px 20px;
+}
+.menu, .sub-menu
+{
+	list-style-type:none;
+}
+.menu li a
+{
+	display: block;	
+}
+.menu li a, #mobile-menu a{
+	color:#000;
+	text-align:center;
+	text-decoration:none;
+	height:67px;
+	line-height:67px;
+	padding: 0px 20px;
+	font-weight:600;
+}
+.current_page_item > a, .menu > li:hover
+{
+	background:url(images/nav-arrow.png) no-repeat center bottom;
+	background-color:#93ac12;
+	color:#FFF !important;
+}
+
+.menu > li:hover .sub-menu li a
+{
+	background-color:#93ac12;
+	height:30px;
+	line-height:30px;
+	color:#FFF;
+	font-weight:normal;
+	padding:10px;
+	min-width: 130px;
+}
+.menu > li:hover .sub-menu li a:hover
+{
+	background-color:#71aa00;
+}
+
+/*
+* === slider & crum ===
+*/
+
+
+#crum
+{
+	clear:both;
+	display:block;
+	width:100%;
+	background-color:#1a1a1a;
+	color:#93ac12;
+	font-size: 12px;
+	margin-top:15px;
+	padding-top:5px;
+	padding-bottom:5px;
+
+}
+#slider
+{
+	clear:both;
+}
+#sliderbar
+{
+	clear:both;
+	display:block;
+	width:100%;
+	background-color:#1a1a1a;
+	color:#e5e5e5;
+	margin-top:-12px;
+}
+
+#sliderbar p{
+	padding:10px 20px 10px 20px;
+	text-align:center;
+}
+
+/*
+* === footer ===
+*/
+
+#footer-top
+{
+	background-color:#333;
+	color:#999;
+	border-top: 4px solid #93ac12;
+	box-sizing: border-box;
+	font-size:11px;
+	clear:both;
+}
+#footer-bottom
+{
+	background-color:#1a1a1a;
+	color:#999;
+	border-top: 1px solid black;
+	box-sizing: border-box;
+	min-height:50px;
+	line-height:15px;
+}
+#footer-bottom img
+{
+	margin-left:25px;
+	padding-top:5px;	
+} 
+
+
+@media only screen and (min-width: 940px) {
+	#contact *
+	{
+		display:inline;	
+		line-height:45px;
+	}
+	.one-third
+	{
+		width:30%;
+		float:left;
+		padding-left:1%;
+	}
+	#footer-top
+	{
+		height:250px;
+	}
+}
+
+/* mobile footer */
+@media only screen and (max-width: 940px) {
+
+	#footer-bottom img
+	{
+		margin-left:25px;
+		padding-top:0px;	
+	}
+	.contactline *
+	{
+		display:inline;
+	}
+	#footer-top
+	{
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	#footer-bottom
+	{
+		padding-bottom:20px;
+	}
+	#footer-bottom, .one-third
+	{
+		padding-left:40px;
+		padding-right:40px;
+	}
+	
+}
